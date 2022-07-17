@@ -1,4 +1,37 @@
+:root {
+    --main-bg-color: #E5E5E5;
+    --section-bg-color: #FFFFFF;
+}
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&family=Roboto:ital@1&display=swap');
+
+/* common style and utilities*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-bg-color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--section-bg-color);
+    width: 870px;
+    padding: 30px;
+
+}
+
 /* top players style */
+.section-title {
+    color: #562EFF;
+    font-size: 24px;
+
+}
+
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -12,4 +45,8 @@
 .player img {
     width: 56px;
     height: 56px;
+}
+
+.player-name {
+    margin-left: 16px;
 }
